@@ -25,6 +25,27 @@ nav a {
   font-weight: bold;
 }
 
+/* 🎯 طراحی واکنش‌گرا برای موبایل */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+}
+
 main {
   max-width: 800px;
   margin: 40px auto;
