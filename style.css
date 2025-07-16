@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>لائیک بودن یعنی چه؟</title>
   <style>
     @font-face {
       font-family: 'Vazirmatn';
@@ -176,30 +175,4 @@
     }
   </style>
 </head>
-<body>
-
-  <!-- ✅ Header Section -->
-  <header>
-    <h1>لائیسیته لیبر</h1>
-    <nav>
-      <a href="index.html">خانه</a>
-      <a href="about.html">درباره ما</a>
-      <a href="articles.html">مقالات</a>
-    </nav>
-  </header>
-
-  <!-- ✅ Main Content -->
-  <main>
-    <a class="button" href="laicite_taylor.pdf" target="_blank">📥 مشاهده یا دانلود مقاله PDF</a>
-    <iframe src="laicite_taylor.pdf">
-      مرورگر شما از نمایش فایل PDF پشتیبانی نمی‌کند.
-    </iframe>
-  </main>
-
-  <!-- ✅ Footer -->
-  <footer>
-    © 2025 لائیسیته لیبر | کلیه حقوق محفوظ است.
-  </footer>
-
-</body>
 </html>
