@@ -1,121 +1,181 @@
-@font-face {
-  font-family: 'Vazirmatn';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@latest/dist/Vazirmatn-Regular.woff2') format('woff2');
-}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لائیک بودن یعنی چه؟</title>
+  <style>
+    @font-face {
+      font-family: 'Vazirmatn';
+      src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@latest/dist/Vazirmatn-Regular.woff2') format('woff2');
+    }
 
-body {
-  font-family: 'Vazirmatn', Tahoma, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  color: #222;
-  direction: rtl;
-}
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      line-height: 2;
+    }
 
-header {
-  background-color: #003049;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+    header {
+      background-color: #003049;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-nav {
-  margin-top: 10px;
-}
+    nav {
+      margin-top: 10px;
+    }
 
-nav a {
-  color: #fcbf49;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 10px 15px;
-}
+    nav a {
+      color: #fcbf49;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 10px 15px;
+    }
 
-/* ✅ دکمه‌های بزرگ و قابل لمس برای لینک مقالات */
-main ul {
-  list-style-type: none;
-  padding: 0;
-}
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      line-height: 1.9;
+    }
 
-main ul li {
-  margin: 20px 0;
-}
+    h2, h3 {
+      text-align: center;
+      color: #003049;
+    }
 
-main ul li a {
-  display: block;
-  padding: 20px;
-  font-size: 1.5rem;
-  background-color: #fcbf49;
-  color: #003049;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  text-align: center;
-  font-weight: bold;
-}
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #003049;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px 0;
+      text-align: center;
+    }
 
-main ul li a:hover {
-  background-color: #ffda77;
-  transform: scale(1.02);
-}
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
 
-/* ✅ طراحی واکنش‌گرا برای موبایل */
-@media (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0;
-  }
+    p {
+      text-align: justify;
+      margin-bottom: 1.5em;
+    }
 
-  nav a {
-    display: block;
-    font-size: 1.3em;
-    padding: 14px 20px;
-    background-color: #003049;
-    color: #fcbf49;
-    border-radius: 8px;
-    width: 90%;
-    text-align: center;
-  }
+    main ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-  header h1 {
-    font-size: 1.6em;
-  }
+    main ul li {
+      margin: 20px 0;
+    }
 
-  body {
-    font-size: 17px;
-  }
+    main ul li a {
+      display: block;
+      padding: 20px;
+      font-size: 1.5rem;
+      background-color: #fcbf49;
+      color: #003049;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+      font-weight: bold;
+    }
 
-  main {
-    padding: 20px 10px;
-  }
+    main ul li a:hover {
+      background-color: #ffda77;
+      transform: scale(1.02);
+    }
 
-  main ul li a {
-    font-size: 1.6rem;
-    padding: 18px;
-  }
-}
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+      }
 
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  line-height: 1.9;
-}
+      nav a {
+        display: block;
+        font-size: 1.3em;
+        padding: 14px 20px;
+        background-color: #003049;
+        color: #fcbf49;
+        border-radius: 8px;
+        width: 90%;
+        text-align: center;
+      }
 
-h2 {
-  color: #003049;
-  margin-top: 30px;
-}
+      header h1 {
+        font-size: 1.6em;
+      }
 
-footer {
-  background: #eaeaea;
-  text-align: center;
-  padding: 15px;
-  margin-top: 50px;
-}
+      body {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+
+      main ul li a {
+        font-size: 1.6rem;
+        padding: 18px;
+      }
+    }
+
+    footer {
+      background: #eaeaea;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header Section -->
+  <header>
+    <h1>لائیسیته لیبر</h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="about.html">درباره ما</a>
+      <a href="articles.html">مقالات</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Content -->
+  <main>
+    <a class="button" href="laicite_taylor.pdf" target="_blank">📥 مشاهده یا دانلود مقاله PDF</a>
+    <iframe src="laicite_taylor.pdf">
+      مرورگر شما از نمایش فایل PDF پشتیبانی نمی‌کند.
+    </iframe>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    © 2025 لائیسیته لیبر | کلیه حقوق محفوظ است.
+  </footer>
+
+</body>
+</html>
